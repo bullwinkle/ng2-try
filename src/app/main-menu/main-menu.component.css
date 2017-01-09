@@ -1,0 +1,23 @@
+ul,menu, dir {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+menu > ul > li {
+  display: inline-block;
+}
+
+menu > ul > li:not(:first-child) {
+  margin-left: 20px;
+}
+
+
+menu a {
+
+}
+
+menu a.active {
+  color: red;
+  font-weight: 900;
+}

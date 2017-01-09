@@ -1,0 +1,11 @@
+ul, menu, dir {
+  margin: 0;
+  padding: 0;
+}
+menu li {
+  display: inline-block;
+}
+
+menu li:not(:first-child) {
+  margin-left: 20px;
+}
