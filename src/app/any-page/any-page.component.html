@@ -2,4 +2,8 @@
   any-page works!
 </p>
 
-<pre>{{ route?.snapshot?.data | json }}</pre>
+<app-page1>
+  <h2>app-page1 transclude</h2>
+</app-page1>
+
+<div [innerHtml]="route?.snapshot?.data?.item"></div>

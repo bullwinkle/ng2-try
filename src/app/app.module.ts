@@ -16,6 +16,7 @@ import {Page3Component} from './page3/page3.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {BodyComponent} from './body/body.component';
 import {AnyPageComponent} from './any-page/any-page.component';
+import { BodyInnerComponent } from './body/body-inner/body-inner.component';
 
 
 @Injectable()
@@ -29,12 +30,12 @@ export class ItemResolver implements Resolve<any> {
 
   resolve(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
+    state: RouterStateSnapshot,
   ): Observable<any>|Promise<any>|any {
 
     console.warn('route,state', route, state)
 
-    return this.http.get('/')
+    return this.http.get('/page.html')
       .map(res=>res.text())
   }
 }
@@ -66,7 +67,8 @@ export const appRoutes: Routes = [
     MainMenuComponent,
     NotFoundComponent,
     BodyComponent,
-    AnyPageComponent
+    AnyPageComponent,
+    BodyInnerComponent
   ],
   imports: [
     BrowserModule,
