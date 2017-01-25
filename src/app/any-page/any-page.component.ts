@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef  } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
